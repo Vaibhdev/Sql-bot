@@ -22,10 +22,11 @@ jobs:
 
       - name: Build with Maven
         run: mvn clean package -DskipTests
-        working-directory: sql-bot_springboot  # 👈 this is the important fix
+        working-directory: sql-bot_springboot   # 👈 fixed folder name
 
       - name: Upload JAR as artifact
         uses: actions/upload-artifact@v4
         with:
           name: sql-bot-jar
-          path: sql-bot/target/sql-bot-0.0.1-SNAPSHOT.jar
+          path: sql-bot_springboot/target/*.jar   # 👈 corrected path
+
