@@ -12,10 +12,12 @@ public class SqlLoader {
     public String loadQuery(boolean isOdd) {
         String path = isOdd ? "sql/q1.sql" : "sql/q2.sql";
         try {
-            var res = new ClassPathResource(path);
+            ClassPathResource res = new ClassPathResource(path);
             return Files.readString(res.getFile().toPath(), StandardCharsets.UTF_8).trim();
         } catch (Exception e) {
             throw new IllegalStateException("Failed to load SQL from " + path + ". Put your final SQL there.", e);
         }
     }
 }
+
+
