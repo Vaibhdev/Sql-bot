@@ -1,6 +1,6 @@
 package com.example.bfhl.service;
 
-import com.example.bfhl.dto.FinalSubmission;
+import com.example.bfhl.dto.finalSubmission;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.stereotype.Service;
 
@@ -23,3 +23,4 @@ public class SolutionStore {
         }
     }
 }
+
