@@ -12,10 +12,10 @@ jobs:
 
     steps:
       - name: Checkout source
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4   # latest stable version
 
       - name: Set up JDK 17
-        uses: actions/setup-java@v3
+        uses: actions/setup-java@v4
         with:
           java-version: '17'
           distribution: 'temurin'
@@ -24,7 +24,8 @@ jobs:
         run: mvn clean package -DskipTests
 
       - name: Upload JAR as artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4  
         with:
           name: sql-bot-jar
           path: target/sql-bot-0.0.1-SNAPSHOT.jar
+
