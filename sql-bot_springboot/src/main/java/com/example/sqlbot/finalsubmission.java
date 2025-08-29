@@ -2,8 +2,9 @@ package com.example.bfhl.dto;
 
 public class finalSubmission {
     private String finalQuery;
-    public FinalSubmission() {}
-    public FinalSubmission(String finalQuery) { this.finalQuery = finalQuery; }
-    public String getFinalQuery() { return finalQuery; }
-    public void setFinalQuery(String finalQuery) { this.finalQuery = finalQuery; }
+    public finalSubmission() {}
+    public finalSubmission(String finalQuery) { this.finalQuery = finalQuery; }
+    public String getfinalQuery() { return finalQuery; }
+    public void setfinalQuery(String finalQuery) { this.finalQuery = finalQuery; }
+
 }
