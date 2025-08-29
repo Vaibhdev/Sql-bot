@@ -1,7 +1,7 @@
 package com.example.bfhl.runner;
 
 import com.example.bfhl.config.BfhlProps;
-import com.example.bfhl.dto.FinalSubmission;
+import com.example.bfhl.dto.finalSubmission;
 import com.example.bfhl.dto.GenerateWebhookRequest;
 import com.example.bfhl.dto.GenerateWebhookResponse;
 import com.example.bfhl.net.BfhlClient;
@@ -61,4 +61,5 @@ public class StartupRunner {
         String last2 = digits.substring(digits.length() - 2);
         return Integer.parseInt(last2);
     }
+
 }
